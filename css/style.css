@@ -1,0 +1,218 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  
+}
+.mid-section{
+  min-height:470px;	
+}
+
+.clearfix{
+ clear:both;	
+}
+.fl{
+float:left;	
+}
+.fr{
+float:right;	
+}
+
+.centered { margin: 0 auto; }
+.oh,.ot,.tt{float:left;padding:0 2% 2% 0;width:48%}.ot{width:31%}.tt{width:65%}.cl{clear:both}
+
+#main ul.category-ul{
+margin:0px 0px 0px 25px;	
+}
+
+.span1 h4{
+text-align:right;	
+}
+
+#categories .category-ul li{
+	list-style:bullet;
+	cursor:pointer;	
+}
+#categories .accordion-group{
+	border: 0px;
+	-webkit-border-radius: 0px;	
+}
+#categories .accordion-group > img.sort-handle-categories{
+	position:absolute;
+	margin-top:12px;
+	cursor:move;
+}
+
+#categories .accordion-inner{
+padding: 0px 1px;
+border-top: 0px solid #e5e5e5;	
+}
+
+#categories .accordion-toggle{
+	padding-left: 20px;	
+}
+
+#addNewCategory{
+cursor:pointer;	
+}
+
+
+ #thumb-collection .editCategoryTitle
+,#thumb-collection .playAllInCategory{
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: normal;
+	color: blue;
+	text-decoration: underline;
+	margin-left: 13px;
+	margin-top: 17px;
+}
+
+#thumb-collection h2{
+	padding-left: 6px;
+	color: gray;
+	line-height: 10px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	float:left;
+}
+#thumb-collection span{
+	float:left;	
+}
+#thumb-collection  ul{
+	height:auto;
+	margin:0px 0px 0px 0px;
+}
+
+#thumb-collection ul li{
+	list-style:none;
+	width: 280px;
+	height:159px;
+	background:white;
+	float:left;
+	margin-left: 7px;
+	margin-top: 7px;
+	position:relative;
+}
+
+#thumb-collection ul li#addAsset{
+	background: lightgray;
+	text-align: center;
+	padding-top: 63px;
+	box-sizing: border-box;
+	color: gray;
+	font-weight: bold;
+	font-size: 24px;
+	cursor:pointer;
+	
+}
+#thumb-collection ul li div.dragHandle{
+	width:17px;
+	height: 17px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:white;	
+	background:url(http://localhost/gopongo/img/drag-handle.png) no-repeat;
+	cursor: move;	
+}
+
+#thumb-collection ul li div.overlay{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	height:33px;
+	background-color: rgba(0, 0, 0, 0.50);
+	padding: 10px;
+	box-sizing:border-box;
+	color:white;
+	font-weight:bold;
+}
+
+#thumb-collection ul li div.overlay .title{
+	width: 201px;
+	text-overflow: ellipsis;
+}
+
+#thumb-collection ul li div.play{
+	height:	159px;	
+}
+
+ #thumb-collection ul li div.overlay .delete
+,.play
+,#thumb-collection ul li div.overlay .edit{
+	cursor:pointer;	
+}
+
+#youtube_container .title{
+ont-weight: bold;
+font-size: 28px;
+margin-bottom: 11px;
+color: gray;
+}
+
+.form_asset_container{
+	height:350px;	
+}
+.form_asset_container h2{
+	line-height: 31px;
+	margin-bottom: 17px;
+	padding-left: 17px;	
+}
+.form_asset_container .control-label{
+	width: 114px;
+}
+.form_asset_container .controls{
+	margin-left: 143px;	
+}
+.form_asset_container textarea{
+	height: 104px;	
+}
+
+ .form_asset_container .oh .img_wrapper
+,.form_asset_container .oh .input-append{
+	padding-left: 32px;
+}
+
+.form_asset_container .oh .input-append{
+	margin-top: 17px;
+}
+.form_asset_container .input-append > input{
+	width: 223px;
+	margin-top: 0px;	
+}
+
+.form_asset_container .submit_wrapper{
+	clear:both;
+	position:relative;
+
+}
+.form_asset_container .btn.submit_asset_form{
+	position:absolute;
+	left: 50%;
+}
+
+.form_asset_container .thumb_img{
+	cursor:pointer;
+	height:159px;
+	width:280px;
+}
+#jcropContainer{
+display:none;
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background: yellow;	
+}
+
+.alert.alert-error{
+display:none;	
+}
+
+.fixedRightBody{
+	position: fixed;
+	top: 76px;
+}
+
