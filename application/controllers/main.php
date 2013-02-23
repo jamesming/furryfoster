@@ -24,27 +24,12 @@ class Main extends Base_Controller {// test
 
 	}
 	
-	
-	public function main_body(){
-		
-		if( $this->_data->loggedIn == false){
-			redirect('/main/index');
-		};
-		
-		$this->_data->body = "body/main/view";
-		$this->_data->hidden = "hidden/view";		
- 		$this->_data->youtube = "hidden/youtube/view";
-		
-		$this->load->view('index', $this->_data);			
-		
-		
-	}
 
 	public function validate(){
 		
-		if($this->input->post('username') == 'jamesming@gmail.com'){
+		if($this->input->post('username') == 'furry'){
 			
-			$session_data = array('user_id' => 2 );						
+			$session_data = array('user_id' => 1 );						
 			
 			$this->session->set_userdata($session_data);	
 			
@@ -59,8 +44,21 @@ class Main extends Base_Controller {// test
 		};
 		
 		
-	}
+	}	
 	
+	public function main_body(){
+		
+		if( $this->_data->loggedIn == false){
+			redirect('/main/index');
+		};
+		
+		$this->_data->body = "body/main/view";
+		$this->_data->hidden = "hidden/view";	
+		
+		$this->load->view('index', $this->_data);			
+		
+		
+	}
 	
 	
 	public function testPostToIframe(){

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Jodstrap Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Jodstrap</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#markup">Markup</a></li>
+                            <li><a href="#styles">Styles</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                            <li><a href="#credits">Credits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>Jodstrap HTML Template</h1>
+                    <p>Crafted with &hearts; by <a href="http://wrapbootstrap.com/user/Saltflakes">Saltflakes</a></p>
+                    <p class="well well-small">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://wrapbootstrap.com/user/Saltflakes">here</a>. Thanks so much!</p>
+                    
+    
+                </div>
+                
+                <hr>
+                
+                <div class="row-fluid">
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author:</td>
+                                <td>Saltflakes</td>
+                            </tr>
+                            <tr>
+                                <td>Contact:</td>
+                                <td><a href="#nowhere">support@saltflakes.net</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author URL:</td>
+                                <td><a href="http://saltflakes.net">http://saltflakes.net</a></td>
+                            </tr>
+                            <tr>
+                                <td>Item URL:</td>
+                                <td><a href="https://wrapbootstrap.com/user/Saltflakes">Portfolio</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Current Version:</td>
+                                <td>1.0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Version</td>
+                                <td>1.0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Created:</td>
+                                <td>2013-01-16</td>
+                            </tr>
+                            <tr>
+                                <td>Modified:</td>
+                                <td>2013-01-16</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="markup">
+                <div class="page-header">
+                    <h1>Markup <small>Markup customization and highlights</small></h1>
+                </div>
+            
+                <p>This theme is a fixed layout with one column. All of the information within the main content area is nested within a div with an class of "container".</p>
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>General Markup</h3>
+                        <p> The general template structure is the same throughout the template. Here is the general structure.</p>
+                    </div>
+            
+                    <div class="span9"> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+        &lt;title&gt;Jodstrap&lt;/title&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Saltflakes&quot;&gt;
+        &lt;!-- CSS Styles --&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;!-- Navigation --&gt;
+         
+        &lt;div class=&quot;container&quot;&gt;
+        &lt;!-- content area --&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Footer --&gt;
+
+        &lt;!-- Javascript Files --&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Nagigation Top Border Color</h3>
+                        <p>If you would like to edit the color of the animated navigation border you would do the following:</p>
+                    </div>
+                
+                    <div class="span9">
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">.backLava {
+border-top: 4px solid <span style="color:#FF8900">#FF8900</span>;
+}</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Change Navigation</h3>
+                        <p>If you want to change the menu structure or simply edit links and page names, search for the navigation lines.</p>
+                    </div>
+                
+                    <div class="span9">
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;!--&lt;div class=&quot;nav-collapse&quot;&gt;--&gt;
+                &lt;ul class=&quot;nav pull-right sf_navmenu navanimation sf-menu hidden-phone&quot; id=&quot;sf-menu-responsive&quot;&gt;
+                    &lt;li id=&quot;home&quot; class=&quot;Lava selectedLava&quot;&gt;
+                        &lt;a href=&quot;index.php&quot;&gt;Home&lt;span&gt;&lt;span class=&quot;hidden-desktop&quot;&gt; - &lt;/span&gt;homepage&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li id=&quot;portfolio&quot; class=&quot;Lava open-submenu&quot;&gt;
+                    &lt;a href=&quot;portfolio.php&quot;&gt;Portfolio &lt;span&gt;&lt;span class=&quot;hidden-desktop&quot;&gt; - &lt;/span&gt;our products&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;navsub noLava&quot;&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;portfolio.php&quot;&gt;Version 1&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;portfolio2.php&quot;&gt;Version 2&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li id=&quot;blog&quot; class=&quot;Lava&quot;&gt;
+                        &lt;a href=&quot;blog.php&quot; &gt;Blog &lt;span&gt;&lt;span class=&quot;hidden-desktop&quot;&gt; - &lt;/span&gt;our blog&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li id=&quot;features&quot; class=&quot;Lava open-submenu&quot;&gt;
+                    &lt;a href=&quot;features.php&quot;&gt;Features &lt;span&gt;&lt;span class=&quot;hidden-desktop&quot;&gt; - &lt;/span&gt;colors &amp; buttons&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;navsub noLava&quot;&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-typography&quot;&gt;Typography&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-icons&quot;&gt;Icons&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-form-validation&quot;&gt;Form &amp; Validation&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-buttons&quot;&gt;Buttons&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-alerts&quot;&gt;Alerts&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-tabs&quot;&gt;Tabs&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-table&quot;&gt;Table&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-tooltips&quot;&gt;Tooltips&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;noLava&quot;&gt;
+                                &lt;a href=&quot;features.php#sf-popover&quot;&gt;Popover&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li id=&quot;contacts&quot; class=&quot;Lava&quot;&gt;
+                        &lt;a href=&quot;contacts.php&quot;&gt;Contacts &lt;span&gt;&lt;span class=&quot;hidden-desktop&quot;&gt; - &lt;/span&gt;mail us&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Styles <small>Styles customization and highlights</small></h1>
+                </div>
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Stylesheets</h3>
+                        <p>Here's a list of the stylesheet files we are using with this template, you can find more information opening each file:</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>standard.css</code></td>
+                                    <td>Here you find all important CSS styles</td>
+                                </tr>
+                                <tr>
+                                    <td><code>bootstrap.css</code></td>
+                                    <td>Bootstrap CSS in uncompressed version</td>
+                                </tr>
+                                <tr>
+                                    <td><code>bootstrap.min.css</code></td>
+                                    <td>Compressed Bootstrap CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>camera.css</code></td>
+                                    <td>Camera Slider CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>colorbox.css</code></td>
+                                    <td>Colorbox (Modal) CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>datepicker.css</code></td>
+                                    <td>Bootstrap Datepicker CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>fontello.css</code><br>
+                                        <code>fontello-codes.css</code><br>
+                                        <code>fontello-ie7.css</code><br>
+                                        <code>fontello-ie7-codes.css</code>
+                                    </td>
+                                    <td>Fontello Fonts CSS Files</td>
+                                </tr>
+                                <tr>
+                                    <td><code>fuelux.min.css</code></td>
+                                    <td>Fuelux compressed CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>isotope.css</code></td>
+                                    <td>Isotope CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.bxslider.css</code></td>
+                                    <td>BXSlider CSS</td>
+                                </tr>
+                                <tr>
+                                    <td><code>ligature.css</code></td>
+                                    <td>Ligature CSS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>               
+            </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: JAVASCRIPT >> START ========================= -->
+            <section id="javascript">
+            
+                <div class="page-header">
+                    <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>JavaScript Files</h3>
+                        <p>Here is a list of all javascript plugins used in this template</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>standard.js</code></td>
+                                    <td>Most of the animation in this site is carried out from the standard script. There are a few functions worth looking over.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-1.8.0.min.js</code></td>
+                                    <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>additional-methods.min.js</code></td>
+                                    <td>jQuery Validation Additional Methods</td>
+                                </tr>
+                                <tr>
+                                    <td><code>bootstrap.js</code><br>
+                                        <code>bootstrap.min.js</code><br>
+                                        <code>bootstrap-datepicker.js</code>
+                                    </td>
+                                    <td>Bootstrap Javascript files</td>
+                                </tr>
+                                <tr>
+                                    <td><code>camera.min.js</code></td>
+                                    <td>Camera Slider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>hoverIntent.js</code></td>
+                                    <td>HoverIntent</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.animate-shadow-min.js</code></td>
+                                    <td>Animate Shadow</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.bxslider.min.js</code></td>
+                                    <td>Bxslider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.colorbox-min.js</code></td>
+                                    <td>Colorbox</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.hoverdir.js</code></td>
+                                    <td>Hoverdir</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.isotope.min.js</code></td>
+                                    <td>Isotope</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.lavalamp.js</code><br>
+                                        <code>jquery.lavalamp.min.js</code></td>
+                                    <td>Lavalamp</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.mobile.customized.min.js</code></td>
+                                    <td>jQuery Mobile</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.validate.min.js</code></td>
+                                    <td>jQuery Validation</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-easing.js</code></td>
+                                    <td>jQuery Easing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-twitter.js</code></td>
+                                    <td>Twitter scroll plugin</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-ui-1.9.0.custom.min.js</code></td>
+                                    <td>jQuery UI Custom</td>
+                                </tr>
+                                <tr>
+                                    <td><code>modernizr.custom.97074.js</code></td>
+                                    <td>Modernizer</td>
+                                </tr>
+                                <tr>
+                                    <td><code>selectnav.min.js</code></td>
+                                    <td>Selectnav</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>Customize Slider</h3>
+                        <p>If you want to change the slider's speed transition, open up the file <code> standard.js </code> and change the following code: </p>
+                    </div>
+                    <div class="span9">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:103">   // camera slider options:
+    if ($('#camera_wrap_1').length &gt; 0) {
+        $('#camera_wrap_1').camera({
+            thumbnails : true,
+            height : '35%',
+            loader : 'none',
+            opacityOnGrid : false,
+            onLoaded : function() {             
+            }
+        });
+    }</pre>
+<!-- Code Block >> End --> 
+                  
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: JAVASCRIPT >> END ========================= -->
+
+          
+            <!-- ========================= SECTION: ALERTS >> START ========================= -->
+            <section id="credits">
+                <div class="page-header">
+                    <h1>Credits </h1>
+                </div>
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="http://jquery.com">jQuery</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo. </small></li>
+                    <li><a href="http://bootstrap.twitter.com">Bootstrap</a> <small>&mdash; Bootstrap Framework. </small></li>
+                    <li><a href="http://www.pixedelic.com/plugins/camera/">Camera</a> <small>&mdash; jQuery powered slider </small></li>
+                    <li><a href="http://isotope.metafizzy.co/">Isotope</a> <small>&mdash; Image gallery filter </small></li>
+                    <li><a href="https://github.com/eternicode/bootstrap-datepicker">Camera</a> <small>&mdash; Bootstrap Datepicker </small></li>
+                    <li><a href="http://www.jacklmoore.com/colorbox">Colorbox</a> <small>&mdash; jQuery powered modal plugin </small></li>
+                    <li><a href="http://bxslider.com/">Bxslider</a> <small>&mdash; jQuery powered slider </small></li>
+                    <li><a href="http://tympanus.net/codrops/2012/04/09/direction-aware-hover-effect-with-css3-and-jquery/">Hover Effect</a> <small>&mdash; Portfolio hover effect</small></li>
+                    <li><a href="http://archive.plugins.jquery.com/project/lavalamp2">Lavalamp</a> <small>&mdash; jQuery powered menu slider </small></li>
+                    <li><a href="https://github.com/lukaszfiszer/selectnav.js">Selectnav</a> <small>&mdash; Responsive menu plugin </small></li>
+                    
+                </ol>
+                <h3>Fonts</h3>
+                <ol>
+                    <li><a href="http://www.google.com/webfonts">Google Web Fonts</a> <small>&mdash; Google Web Fonts </small></li>
+                </ol>
+                <h3>Icons</h3>
+                <ol>
+                    <li><a href="http://fontello.com/">Fontello</a> <small>&mdash; Many nice icon fonts.</small></li>
+                    <li><a href="http://kudakurage.com/ligature_symbols/">Ligature Symbols</a> <small>&mdash; More nice icons.</small></li>
+                    
+                </ol>
+                
+            </section>
+            <!-- ========================= SECTION: ALERTS >> END ========================= -->
+
+            <hr />
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this theme. As we said at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do our best to assist.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; Saltflakes 2013</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+            
+<!-- Code Block >> Start -->                   
+<pre>Legend:
++   Addition
+^   Change
+-   Removed
+*   Security Fix
+#   Bug Fix
+!   Note</pre>
+<!-- Code Block >> End --> 
+                  
+<!-- Code Block >> Start -->                   
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<!-- Code Block >> End -->                   
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+  
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>

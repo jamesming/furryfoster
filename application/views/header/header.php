@@ -7,13 +7,7 @@
 	<meta name="author" content="">
 
 	<meta name="viewport" content="width=device-width">
-	<?php if( $body == "body/main/view"){?>
-		<style>
-			body{
-				visibility:hidden;			
-			}	
-		</style>
-	<?php } ?>	
+	
 	<link rel="stylesheet" href="<?php  echo base_url()   ?>js/libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php  echo base_url()   ?>js/libs/jquery-ui/themes/base/jquery.ui.all.css">
 	
@@ -53,5 +47,4 @@
 <script src="<?php  echo base_url()   ?>js/libs/jquery-ui/ui/minified/jquery.ui.droppable.min.js"></script>	
 <script src="<?php  echo base_url()   ?>js/libs/jquery-ui/ui/minified/jquery.ui.position.min.js"></script>	
 <script src="<?php echo base_url()    ?>js/libs/fancyzoom/fancyzoom_extended.js"></script>
-<script src="//www.youtube.com/iframe_api"></script>
 </head>
