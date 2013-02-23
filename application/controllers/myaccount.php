@@ -8,7 +8,7 @@ class Myaccount extends Base_Controller {// test
 		
 		$this->class = 'myaccount';
 		
-		$this->left_menu_item = ( $this->uri->segment(3) != '' ? $this->uri->segment(3) : 'manage_pets' );
+		$this->left_menu_item = ( $this->uri->segment(3) != '' ? $this->uri->segment(3) : 'rescue_profile' );
 		
 		$this->left_menu_items = array();
 		
