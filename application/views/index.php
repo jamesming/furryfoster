@@ -12,7 +12,34 @@
 	};?>	
 	<div  class='mid-section ' >
 		<div   style='padding-top:10px'  >
-			<?php $this->load->view($body); ?>
+			
+			
+			<?php if( $body == 'myaccount'){?>
+			
+					<div class="container-fluid">
+						
+						<div class="row-fluid">
+							<h2>My Account</h2>
+						</div>
+						<div class="row-fluid">
+							<a>Rescue Name</a>
+						</div>	
+						<br />
+						<div class="row-fluid">
+					
+						<?php if( isset( $left) ) $this->load->view($left) ?>
+						<?php $this->load->view($right); ?>
+					
+						</div> <!-- End Row -->
+					</div> <!-- End Container -->			
+			
+			<?php }elseif ( $body == 'login'){ ?>
+				
+					<?php $this->load->view($right); ?>
+				
+			<?php } ?>
+			
+			
 		</div>
 	</div>
 <?php

@@ -29,6 +29,50 @@ class Base_Controller extends CI_Controller
 		
 	}
 	
+	public function index(){
+		
+		//$this->assets_model->clear_table_of_empty_records_flagged_with_update_field_equals_0000();
+		if( $this->_data->loggedIn == true ){
+			
+			$this->main();			
+			
+		}else{
+			$this->_data->body = 'login';
+			$this->_data->right = "body/login/view";
+			$this->load->view('index', $this->_data);				
+		};
+
+	}
+	public function main(){
+	
+		if( $this->_data->loggedIn == false){
+			redirect('/main/index');
+		};
+		
+		$this->_data->body = $this->class;
+		$this->_data->left = 'body/'.$this->class.'/left/view';	
+		$this->_data->left_menu_items = $this->left_menu_items;	
+		$this->_data->right = 'body/'.$this->class.'/right/'.$this->left_menu_item.'/view';
+
+		$this->_data->hidden = 'hidden/view';	
+		
+		$this->load->view('index', $this->_data);			
+		
+		
+	}
+
+	public function validate(){
+		
+		if($this->input->post('username') == 'furry'){
+			$session_data = array('user_id' => 1 );						
+			$this->session->set_userdata($session_data);	
+			redirect('/'.$this->class.'/main');			
+		}else{
+			$this->session->sess_create();
+			redirect('/'.$this->class.'/index');
+		};
+	}
+	
 	function create_table(){
 		
 		/* 

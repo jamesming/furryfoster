@@ -47,4 +47,5 @@
 <script src="<?php  echo base_url()   ?>js/libs/jquery-ui/ui/minified/jquery.ui.droppable.min.js"></script>	
 <script src="<?php  echo base_url()   ?>js/libs/jquery-ui/ui/minified/jquery.ui.position.min.js"></script>	
 <script src="<?php echo base_url()    ?>js/libs/fancyzoom/fancyzoom_extended.js"></script>
+<script src="<?php echo base_url()    ?>js/libs/holder/holder.js"></script>
 </head>

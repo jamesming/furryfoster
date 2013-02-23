@@ -10,9 +10,9 @@
 				
 				<div class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a href="#"><i class="icon-home"></i> About Us</a></li>
+						<li class="active"><a href="#"><i class="icon-home"></i> About Us</a></li>
 						<li class="divider-vertical"></li>
-						<li class="active"><a href="#"><i class="icon-file"></i> Browse Pets</a></li>
+						<li><a href="#"><i class="icon-file"></i> Browse Pets</a></li>
 						<li class="divider-vertical"></li>
 						<li><a href="#"><i class="icon-envelope"></i> Foster Parents</a></li>
 						<li class="divider-vertical"></li>
@@ -27,12 +27,12 @@
 					</ul>
 					<div class="btn-group pull-right">
 						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-							<i class="icon-user"></i> admin	<span class="caret"></span>
+							<i class="icon-user"></i>&nbsp;My Account&nbsp;<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#"><i class="icon-wrench"></i> Settings</a></li>
 							<li class="divider"></li>
-							<li><a href="<?php  echo base_url()   ?>main/validate"><i class="icon-off"></i> Logout</a></li>
+							<li><a href="<?php  echo base_url()   ?>myaccount/validate"><i class="icon-off"></i> Logout</a></li>
 						</ul>
 					</div>
 				</div>

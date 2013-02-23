@@ -1,5 +1,5 @@
 body {
-  padding-top: 60px;
+  padding-top: 45px;
   padding-bottom: 40px;
   
 }
@@ -7,19 +7,42 @@ body {
   min-height:470px;	
 }
 
-.clearfix{
- clear:both;	
-}
-.fl{
-float:left;	
-}
-.fr{
-float:right;	
-}
-
 .centered { margin: 0 auto; }
 .oh,.ot,.tt{float:left;padding:0 2% 2% 0;width:48%}.ot{width:31%}.tt{width:65%}.cl{clear:both}
 
+h1, h2, h3, h4, h5, h6{
+	color:gray !important;	
+}
 li{
 list-style:none;	
+}
+.left-side-containers{
+ 	min-height:270px !important;
+ 	padding:15px;
+}
+.left-side-containers ul{
+	text-align:right;	
+}
+.left-side-containers ul li{
+	height:30px;	
+}
+.left-side-containers ul li.active{
+	text-decoration:underline;	
+}
+
+.right-side-containers{
+	padding-left:28px;
+	padding-bottom:30px;
+}
+.subheader > div{
+	margin-bottom: 20px;
+}
+
+.subheader > div >h3{
+	line-height: 0px;
+	
+}
+
+footer{
+text-align: center;
 }

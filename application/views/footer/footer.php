@@ -6,9 +6,6 @@
 
 <script src="<?php echo base_url()    ?>js/plugins.js?v=<?php echo rand()    ?>"></script>
 
-<?php if( $body == "body/main/view"){?>
-	<script src="<?php echo base_url()    ?>js/script.js?v=<?php echo rand()    ?>"></script>
-<?php } ?>
 
 
 
