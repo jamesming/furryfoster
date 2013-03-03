@@ -9,6 +9,8 @@ class Base_Controller extends CI_Controller
 		parent::__construct();
 		
 		$this->assets_model = new Models_Db_Assets_Model;
+		
+		$this->action = $this->uri->segment(3);
 
 		$this->_data = new stdClass;
 		
@@ -45,6 +47,10 @@ class Base_Controller extends CI_Controller
 	}
 	public function main(){
 	
+		$this->set();
+		
+		$this->_data->db = $this->db;		
+	
 		if( $this->_data->loggedIn == false){
 			redirect('/main/index');
 		};
@@ -55,6 +61,7 @@ class Base_Controller extends CI_Controller
 		$this->_data->right = 'body/'.$this->class.'/right/'.$this->left_menu_item.'/view';
 
 		$this->_data->hidden = 'hidden/view';	
+		
 		
 		$this->load->view('index', $this->_data);			
 		

@@ -2,14 +2,25 @@
 
 class Myaccount extends Base_Controller {// test
 	
-	function __construct() {
-		
-		parent::__construct();
+	function set() {
 		
 		$this->class = 'myaccount';
 		
-		$this->left_menu_item = ( $this->uri->segment(3) != '' ? $this->uri->segment(3) : 'rescue_profile' );
+		$this->action = ( $this->action != '' ? $this->action : 'rescue_profile' );
 		
+		switch ($this->action) {
+		    case 'rescue_profile':
+			    	$model = new Models_Db_Rescues_Model( $pk = 1, 'rescues');
+			    	$this->db = array('rescues' => $model->to_array());	
+		    break;
+		    case 'manage_pets':
+		    break;
+		    case 'account_settings':
+		    break;
+		}
+		
+		$this->left_menu_item =	$this->action;
+
 		$this->left_menu_items = array();
 		
 		$this->pushMenuItem('manage_pets', 'Manage Pets');

@@ -47,7 +47,7 @@
 		$this->load->view($hidden); 
 	};
 ?>	
-<?php $this->load->view($company); ?>
+<?php $this->load->view($company);?>
 </body>
 <?php $this->load->view($footer); ?>
 

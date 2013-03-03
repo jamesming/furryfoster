@@ -21,7 +21,7 @@
 					</div>
 					<div  class='pull-left span7'>
 						<label>Name</label>
-						<input type="text" class="span4" placeholder="Your First Name">
+						<input type="text" class="span4" placeholder="Your First Name" value='<?php  echo $db['rescues'][0]->name;   ?>'>
 			
 						<label>Email Address</label>
 						<input type="text" class="span4" placeholder="Your email address">
