@@ -1,12 +1,34 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Myaccount extends Base_Controller {// test
+class Myaccount extends Base_Controller {
 	
-	function set() {
+	protected static $_default_left_menu_selection = 'rescue_profile';
+	
+	protected static $_left_menu_items = array(
+		0=>array(
+			'name'=>'manage_pets',
+			'label'=>'Manage Pets'
+		),
+		1=>array(
+			'name'=>'rescue_profile',
+			'label'=>'Edit Rescue Profile'
+		),
+		2=>array(
+			'name'=>'account_settings',
+			'label'=>'Account Settings'
+		)			
+	);
+	
+	public function set() {
 		
 		$this->class = 'myaccount';
 		
-		$this->action = ( $this->action != '' ? $this->action : 'rescue_profile' );
+		$this->action = ( $this->action != '' ? $this->action : self::$_default_left_menu_selection );
+		
+		$this->left_menu_items = $this->designate_left_menu_selection(
+			self::$_left_menu_items,
+			$this->action
+		);
 		
 		switch ($this->action) {
 		    case 'rescue_profile':
@@ -18,25 +40,7 @@ class Myaccount extends Base_Controller {// test
 		    case 'account_settings':
 		    break;
 		}
-		
-		$this->left_menu_item =	$this->action;
 
-		$this->left_menu_items = array();
-		
-		$this->pushMenuItem('manage_pets', 'Manage Pets');
-		$this->pushMenuItem('rescue_profile', 'Edit Rescue Profile');
-		$this->pushMenuItem('account_settings', 'Account Settings');
 	}
 	
-	function pushMenuItem($name, $label){
-		
-		array_push($this->left_menu_items, array(
-				'name' => $name,
-				'label' => $label,
-				'active' => ( $this->left_menu_item == $name ? true : false )	
-			));		
-		
-	}
-	
-
 }

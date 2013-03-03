@@ -58,10 +58,10 @@ class Base_Controller extends CI_Controller
 		$this->_data->body = $this->class;
 		$this->_data->left = 'body/'.$this->class.'/left/view';	
 		$this->_data->left_menu_items = $this->left_menu_items;	
-		$this->_data->right = 'body/'.$this->class.'/right/'.$this->left_menu_item.'/view';
+		$this->_data->right = 'body/'.$this->class.'/right/'.$this->action.'/view';
 
 		$this->_data->hidden = 'hidden/view';	
-		
+
 		
 		$this->load->view('index', $this->_data);			
 		
@@ -80,7 +80,26 @@ class Base_Controller extends CI_Controller
 		};
 	}
 	
-	function create_table(){
+	
+	
+	public function designate_left_menu_selection(
+		$left_menu_items,
+		$default_left_menu_selection
+	) {
+		$_left_menu_items = array();
+		foreach( $left_menu_items  as $left_menu_item){
+			
+			if( $left_menu_item['name'] == $default_left_menu_selection){
+				$left_menu_item['active'] = true;
+			};			
+			
+			array_push($_left_menu_items, $left_menu_item);
+		}
+		
+		return $_left_menu_items;
+	}
+	
+	public function create_table(){
 		
 		/* 
 		*
